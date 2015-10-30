@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Armata";
+    src: url("../font/Armata-Regular.otf");
+}
+@font-face {
+    font-family: "Liberation Sans";
+    src: url("../font/LiberationSans-Regular.ttf");
+}
+
+body {
+    background: #f6f6f6;
+    font-family: "Liberation Sans", sans-serif ;
+}
+
+body > .row {
+    margin-top: 40px;
+}
+
+#accueil {
+    background: url("../img/background-accueil.png") no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    padding:50px 0;
+}
+
+@media (min-width: 650px) {
+    #accueil {
+        margin: 0 5%;
+    }
+    /* Only needed on non ajax usage
+    .small-footer {
+        display: none;
+    }*/
+}
+
+@media (max-width: 649px) {
+    /* Only needed on non ajax usage
+    .large-footer {
+        display: none;
+    }*/
+}
+
+.panel {
+    -moz-box-shadow: 1px 1px 5px 2px #c0c0c0;
+    -webkit-box-shadow: 1px 1px 5px 2px #c0c0c0;
+    box-shadow: 1px 1px 5px 2px #c0c0c0;
+    background-color: white;
+    border: none;
+}
+
+#accueil .panel { /*L'ombre est plus sombre pour être visible */
+    -moz-box-shadow: 1px 1px 5px 2px #9b9b9b;
+    -webkit-box-shadow: 1px 1px 5px 2px #9b9b9b;
+    box-shadow: 1px 1px 5px 2px #9b9b9b;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+h1, h2 {
+    text-align: center;
+}
+h1, h2, h3, a.button {
+    font-family: Armata, sans-serif;
+}
+h1 {
+    font-size: 30pt;
+}
+h2 {
+    font-size: 23pt;
+}
+h3 {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.note-0, .note-1, .note-2, .note-3, .note-4, .note-5, .note-6 {
+    width: 109px;
+    height: 92px;
+    background: url("../img/hexagone-note-sprites.png");
+    text-align: center;
+    line-height: 92px;
+    font-size: 15pt;
+    margin-bottom: 25px;
+    color: white;
+    display: inline-block;
+}
+.note-0 {
+    background-position: 0 0;
+}
+.note-1 {
+    background-position: 220px 0;
+}
+.note-2 {
+    background-position: 111px 0;
+}
+.note-3 {
+    background-position: 0 188px;
+}
+.note-4 {
+    background-position: 220px 188px;
+}
+.note-5 {
+    background-position: 111px 188px;
+}
+.note-6 {
+    background-position: 0 284px;
+}
+
+footer {
+    background-color: #CECECE;
+    padding-top: 15px;
+    border-top: solid #056687 3px;
+}
+
+footer .row {
+    max-width: 72.5rem;
+}
+
+footer .center, .links > a {
+    text-align: center;
+    display: block;
+}
+
+footer .links {
+    margin: 15px 0;
+}
+
+footer a{
+    color: #056687;
+}
+
+footer a:hover {
+    color: #056687;
+    text-decoration: underline;
+}
+
+.social > img {
+    margin-top: 20px;
+}
+
+.sitemap {
+    text-align: left;
+    padding: 0 5px;
+}
+
+.sitemap a {
+    color: black;
+}
+
+.sitemap a:hover {
+    color: black;
+}
+
+.sitemap a + a {
+    display: block;
+    max-width: 250px;
+    border-top: solid #959595 1px;
+}
+
+.sitemap * {
+    padding: 3px 15px;
+}
+
+footer .right {
+    text-align: right;
+}
+
+h5 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+#legal-line {
+    background-color: #737373;
+    border-top: solid #959595 3px;
+    color: white;
+}
+
+#legal-line a {
+    color: white;
+}
+
+#legal-line a:hover {
+    color: white;
+    text-decoration: underline;
+}
